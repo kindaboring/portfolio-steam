@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-steam-dark: #171a21;
+  --color-steam-bg: #1b2838;
+  --color-steam-secondary: #2a475e;
+  --color-steam-card: #16202d;
+  --color-steam-text: #c7d5e0;
+  --color-steam-muted: #8f98a0;
+  --color-steam-blue: #67c1f5;
+  --color-steam-teal: #57cbde;
+  --color-steam-green: #4fa94d;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #1b2838;
+  color: #c7d5e0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171a21;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d5068;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #67c1f5;
+}
+
+/* Steam-authentic section header: fades from blue to transparent */
+.section-header {
+  background: linear-gradient(to right, rgba(42, 71, 94, 0.8) 0%, rgba(42, 71, 94, 0) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Steam-authentic section box */
+.section-box {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(102, 193, 245, 0.15);
 }
