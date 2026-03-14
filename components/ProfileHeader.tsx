@@ -40,7 +40,7 @@ export default function ProfileHeader() {
   return (
     <div>
       {/* Background Art Banner */}
-      <div className="relative overflow-hidden" style={{ height: "310px" }}>
+      <div className="relative overflow-hidden h-[200px] md:h-[310px]">
         <div
           className="absolute inset-0"
           style={{
