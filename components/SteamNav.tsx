@@ -32,7 +32,7 @@ export default function SteamNav() {
             <a
               key={link.href}
               href={link.href}
-              className="px-3 py-1 text-[13px] font-medium transition-colors hover:text-white"
+              className="px-2 md:px-3 py-1 text-[12px] md:text-[13px] font-medium transition-colors hover:text-white"
               style={{ color: "#c6d4df" }}
             >
               {link.label}
@@ -41,7 +41,7 @@ export default function SteamNav() {
         </div>
 
         <div
-          className="text-[13px] font-medium"
+          className="hidden md:block text-[13px] font-medium"
           style={{ color: "#c6d4df" }}
         >
           Kyle Cummings
