@@ -57,7 +57,7 @@ export default function RecentActivity({
 
         <div>
           {repos.length > 0 ? (
-            repos.map((repo, i) => {
+            repos.slice(0, 3).map((repo, i) => {
               const langColor = repo.language
                 ? (LANGUAGE_COLORS[repo.language] ?? "#4a6b8a")
                 : "#4a6b8a";
@@ -186,7 +186,7 @@ export default function RecentActivity({
 
         <div>
           {articles.length > 0 ? (
-            articles.map((article, i) => (
+            articles.slice(0, 3).map((article, i) => (
               <div
                 key={i}
                 className="px-4 py-3 hover:bg-white/[0.03] transition-colors"

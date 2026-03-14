@@ -26,7 +26,7 @@ function YearsOfServiceBadge({ years }: { years: number }) {
 
       <div>
         <div className="text-[11px] font-semibold" style={{ color: "#c6d4df" }}>
-          {years} Years of Service
+          Years of Service
         </div>
         <div className="text-[10px] mt-0.5" style={{ color: "#8f98a0" }}>
           Cloud &amp; Infrastructure
@@ -40,7 +40,7 @@ export default function ProfileHeader() {
   return (
     <div>
       {/* Background Art Banner */}
-      <div className="relative overflow-hidden h-[200px] md:h-[310px]">
+      <div className="relative overflow-hidden h-[160px] md:h-[160px]">
         <div
           className="absolute inset-0"
           style={{
