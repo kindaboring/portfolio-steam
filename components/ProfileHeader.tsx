@@ -85,19 +85,16 @@ export default function ProfileHeader() {
       </div>
 
       {/* Profile block – overlaps banner */}
-      <div className="relative" style={{ marginTop: "-130px" }}>
-        <div className="flex gap-4 items-end">
+      <div className="-mt-[80px] md:-mt-[130px] relative">
 
-          {/* Left: avatar only */}
-          <div
-            className="shrink-0 z-10"
-            style={{ width: "184px" }}
-          >
+        {/* Mobile: stack vertically centered. Desktop: side by side */}
+        <div className="flex flex-col items-center md:flex-row md:items-end gap-4">
+
+          {/* Avatar */}
+          <div className="shrink-0 z-10">
             <div
-              className="overflow-hidden rounded-sm"
+              className="overflow-hidden rounded-sm w-[120px] h-[120px] md:w-[184px] md:h-[184px]"
               style={{
-                width: "184px",
-                height: "184px",
                 border: "2px solid rgba(0,0,0,0.6)",
                 boxShadow: "0 4px 16px rgba(0,0,0,0.6)",
               }}
@@ -113,19 +110,19 @@ export default function ProfileHeader() {
             </div>
           </div>
 
-          {/* Right: split into info (left) and level/badge (far right) */}
-          <div className="z-10 flex-1 min-w-0 pb-1 flex items-end justify-between gap-4">
+          {/* Info + Level */}
+          <div className="z-10 flex-1 min-w-0 pb-1 flex flex-col md:flex-row md:items-end md:justify-between gap-4 w-full">
 
             {/* Name, status, bio, title */}
-            <div className="min-w-0">
+            <div className="min-w-0 text-center md:text-left">
               <h1
-                className="font-bold leading-tight"
-                style={{ color: "#c7d5e0", fontSize: "32px" }}
+                className="font-bold leading-tight text-[24px] md:text-[32px]"
+                style={{ color: "#c7d5e0" }}
               >
                 Kyle Cummings
               </h1>
 
-              <div className="flex items-center gap-4 mt-1">
+              <div className="flex items-center justify-center md:justify-start gap-4 mt-1">
                 <div className="flex items-center gap-1.5">
                   <div
                     className="w-2 h-2 rounded-full"
@@ -152,7 +149,7 @@ export default function ProfileHeader() {
                 automating cloud systems across AWS, Azure, and GCP.
               </p>
 
-              <div className="mt-3">
+              <div className="mt-3 flex justify-center md:justify-start">
                 <span
                   className="px-2 py-1 rounded-sm text-[11px] font-medium"
                   style={{
@@ -166,8 +163,8 @@ export default function ProfileHeader() {
               </div>
             </div>
 
-            {/* Level + Years of Service — pinned to far right */}
-            <div className="shrink-0 flex flex-col items-end gap-3">
+            {/* Level + Years of Service */}
+            <div className="shrink-0 flex flex-row md:flex-col items-center md:items-end justify-center gap-3">
               {/* Years of Service badge */}
               <YearsOfServiceBadge years={8} />
 
