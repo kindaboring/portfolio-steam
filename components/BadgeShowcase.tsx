@@ -16,7 +16,7 @@ const BADGES: Badge[] = [
     imageUrl:
       "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
     earned: true,
-    earnedDate: "2023",
+    earnedDate: "2025",
     xp: 1000,
   },
   {

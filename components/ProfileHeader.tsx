@@ -137,7 +137,7 @@ export default function ProfileHeader() {
                   <svg className="w-3 h-3 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                   </svg>
-                  Baltimore / NYC
+                  New York, NY
                 </div>
               </div>
 
@@ -145,7 +145,7 @@ export default function ProfileHeader() {
                 className="mt-3 leading-relaxed"
                 style={{ color: "#c7d5e0", fontSize: "13px" }}
               >
-                infrastructure &amp; devops engineer with 8+ years building and
+                senior cloud infrastructure engineer with 9+ years building and
                 automating cloud systems across AWS, Azure, and GCP.
               </p>
 
@@ -158,7 +158,7 @@ export default function ProfileHeader() {
                     color: "#67c1f5",
                   }}
                 >
-                  Cloud Engineer / DevOps
+                  Senior Cloud Infrastructure Engineer
                 </span>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function ProfileHeader() {
             {/* Level + Years of Service */}
             <div className="shrink-0 flex flex-row md:flex-col items-center md:items-end justify-center gap-3">
               {/* Years of Service badge */}
-              <YearsOfServiceBadge years={8} />
+              <YearsOfServiceBadge years={9} />
 
               {/* Level / XP */}
               <div
@@ -181,7 +181,7 @@ export default function ProfileHeader() {
                     className="font-black leading-none"
                     style={{ color: "white", fontSize: "26px" }}
                   >
-                    8
+                    9
                   </div>
                   <div
                     className="text-[9px] uppercase tracking-widest mt-0.5"
@@ -198,13 +198,13 @@ export default function ProfileHeader() {
                     <div
                       className="h-full"
                       style={{
-                        width: "82%",
+                        width: "92%",
                         background: "linear-gradient(90deg, #4fa94d, #57cbde)",
                       }}
                     />
                   </div>
                   <div className="flex justify-between mt-0.5">
-                    <span style={{ color: "#8f98a0", fontSize: "9px" }}>8,200 XP</span>
+                    <span style={{ color: "#8f98a0", fontSize: "9px" }}>9,200 XP</span>
                     <span style={{ color: "#8f98a0", fontSize: "9px" }}>10,000 XP</span>
                   </div>
                 </div>

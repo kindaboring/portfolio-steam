@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kyle Cummings — Cloud Engineer / DevOps",
+  title: "Kyle Cummings — Senior Cloud Infrastructure Engineer",
   description:
-    "Infrastructure & DevOps engineer with 8+ years building and automating cloud systems across AWS, Azure, and GCP.",
+    "Senior cloud infrastructure engineer with 9+ years building and automating cloud systems across AWS, Azure, and GCP.",
   openGraph: {
-    title: "Kyle Cummings — Cloud Engineer / DevOps",
+    title: "Kyle Cummings — Senior Cloud Infrastructure Engineer",
     description:
-      "Infrastructure & DevOps engineer with 8+ years building and automating cloud systems.",
+      "Senior cloud infrastructure engineer with 9+ years building and automating cloud systems.",
     type: "website",
   },
 };
