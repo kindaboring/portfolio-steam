@@ -40,8 +40,8 @@ const SOCIALS = [
   },
   {
     platform: "Twitter / X",
-    handle: "@kndaboring",
-    url: "https://twitter.com/kndaboring",
+    handle: "@kndaborng",
+    url: "https://x.com/kndaborng",
     color: "#e7e7e7",
     status: "Follow",
     Icon: TwitterIcon,
