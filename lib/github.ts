@@ -47,10 +47,16 @@ export function timeAgo(dateString: string): string {
 
 export async function getGitHubRepos(username: string): Promise<GitHubRepo[]> {
   try {
+    const headers: Record<string, string> = {
+      Accept: "application/vnd.github.v3+json",
+    };
+    if (process.env.GITHUB_TOKEN) {
+      headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+    }
     const response = await fetch(
       `https://api.github.com/users/${username}/repos?sort=updated&per_page=8&type=public`,
       {
-        headers: { Accept: "application/vnd.github.v3+json" },
+        headers,
         next: { revalidate: 3600 },
       }
     );
